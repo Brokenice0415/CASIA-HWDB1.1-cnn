@@ -75,7 +75,12 @@ Epoch 15/15
 Test score: 0.32826207710256655
 Test accuracy: 0.9214865656650205
 ```
+   3.5. (Optional) retrain the model in 3
+
+You need to modify the `model_filepath` , `weights_filepath`, `subset_filepath` with your own file name which produced in step 1,2,3.
+
 4. (Optional) Generate a report of some classifications:
+
 ```
 $ python3 4-draw_results.py HWDB1.1subset.hdf5 model-1528618732.json weights-1528618732-0.921487.hdf5
 Using TensorFlow backend.
@@ -86,3 +91,11 @@ Test score: 0.32826207710256655
 Test accuracy: 0.9214865656650205
 Extracting some results...
 ```
+
+5. (Optional) Predict/Classify 
+
+​	Classify your image in the label subset range.
+
+​	You need to modify the `model_filepath` , `weights_filepath` with your own file name which produced in step 1,2,3.
+
+​	The `img_path` is the path of your image to be classified.
